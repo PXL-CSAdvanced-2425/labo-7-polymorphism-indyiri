@@ -6,7 +6,7 @@ R,milling machine,1300,900,0.8
 G,grinder
 L,waterjet cutter,1600,1100,1.2,0.000001
 L,plasma cutter,1400,1000,1.1,0.0001
-C,bandsaw,800,500,0.4
+R,bandsaw,800,500,0.4
 L,welder,600,400,0.35,0.23
 G,sander
 R,planer,900,600,0.45
