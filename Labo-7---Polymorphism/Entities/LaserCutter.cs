@@ -22,7 +22,6 @@ namespace Labo_7___Polymorphism.Entities
         {
             this.Accuracy = accuracy;
             base.Lifespan = 5000;
-
         }
 
         public override void Use(int numberOfMinutes)

@@ -48,7 +48,7 @@ public partial class MainWindow : Window
 
                     switch (values[0])
                     {
-                        case "L":
+                        case "L":                               // Het aantal waarden dat we moeten uitlezen voor de LaserCutter zijn gebaseerd op het aantal waarden van de constructor. Het parsen moet omdat we het als string wordt uitgelezen.
                             machine = new LaserCutter(
                                 values[1],
                                 double.Parse(values[2]),
@@ -57,7 +57,7 @@ public partial class MainWindow : Window
                                 double.Parse(values[5])
                                 );
                             break;
-                        case "R":
+                        case "R":                               // Het aantal waarden dat we moeten uitlezen voor de Router zijn gebaseerd op het aantal waarden van de constructor. Het parsen moet omdat we het als string wordt uitgelezen.
                             machine = new Router(
                                 values[1],
                                 double.Parse(values[2]),
@@ -65,13 +65,12 @@ public partial class MainWindow : Window
                                 double.Parse(values[4])
                                 );
                             break;
-                        case "G":;
+                        case "G":                              // Het aantal waarden dat we moeten uitlezen voor de General zijn gebaseerd op het aantal waarden van de constructor. Het parsen moet omdat we het als string wordt uitgelezen.
                             machine = new General(
                                 values[1]
                                 );
                             break;
                         default:
-
                             break;
                     }
 
